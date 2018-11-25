@@ -11,8 +11,13 @@ public class Aufgabe3_1810653115
         double alter = Double.parseDouble(eingabe);
         String newValue = String.valueOf(alter);
 
-        // Es können nur Zahlen eingegeben werden, auch mit Kommastellen
+        /* Es können nur Zahlen eingegeben werden, auch mit Kommastellen
+         ValueOf gibt den Double Wert als String aus - gibt Integer aus
+         parseInt ist nur primitiver Int (nimmt Werte auf - Integer ist Klasse
+        */
+        JOptionPane.showMessageDialog(null, newValue);
         JOptionPane.showMessageDialog(null, alter);
+
 
         // Int
         String eingabe1 = JOptionPane.showInputDialog("Bitte Eingabe tätigen! Int");
